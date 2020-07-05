@@ -1,19 +1,7 @@
 
 export default {
-  /*
-  ** Nuxt rendering mode
-  ** See https://nuxtjs.org/api/configuration-mode
-  */
   mode: 'spa',
-  /*
-  ** Nuxt target
-  ** See https://nuxtjs.org/api/configuration-target
-  */
   target: 'server',
-  /*
-  ** Headers of the page
-  ** See https://nuxtjs.org/api/configuration-head
-  */
   head: {
     title: '陈莹',
     meta: [
@@ -29,6 +17,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '~assets/scss/reset.scss',   //引入公共文件
     'element-ui/lib/theme-chalk/index.css'
   ],
   /*
