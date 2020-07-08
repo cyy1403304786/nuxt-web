@@ -1,0 +1,266 @@
+<template>
+ <div class="blog_wrap">
+    <Header></Header>
+    <div class="banner">
+      <div class="banner_left">
+          <div class="logo">
+            <img src="../assets/images/logo.png" alt="">
+          </div>
+          <div class="intro">
+            <h2 class="title">博文介绍</h2>
+            <p class="details">Yingying is a beautiful and talented woman Yingying is a beautiful and talented woman</p>
+            <el-button class="btn">了解更多</el-button>
+          </div>
+      
+      </div>
+      <div class="banner_right">
+        <img src="../assets/images/banner.png" alt="">
+      </div>
+    </div>
+    <div class="colorBg">
+       <div class="content w">
+         <div class="contentList">
+            <div class="contentListTop">
+              <img src="../assets/images/coffee.png" alt="">
+              <div class="tab">最新文章</div>
+            </div>
+            <div class="contentListBottom">
+               <div class="titleLogo">
+                 <img src="../assets/images/titleLogo.png" alt="">
+               </div>
+               <div class="titleContent">
+                 <h5 class="articleTitle">你想要的未来是什么样?</h5>
+                 <p class="time">2020-03-25 12；08：12</p>
+                 <p class="articleContent">面对压力的时候，焦燥，无非是因为现在的自己，跟想象中的自己很有距离。打败焦虑的最好方法，就是去做那些让你焦虑的事情。
+                   不要问，不要等，不要犹豫，不要回头，既然你认准了这条路，就不要去打听要走多久。没有踏不平的路，只有不努力的人。态度决定一切，努力才有回报。你必须十分努力，才能看起来毫不费力。
+                 </p>
+                 <div class="articleInfo">
+                   <img src="" alt="">
+                   <span class="category">追忆年华</span>
+                   <div  class="read">阅读全文</div>
+                 </div>
+               </div>
+            </div>
+            <div class="contentListBottom">
+               <div class="titleLogo">
+                 <img src="../assets/images/titleLogo1.png" alt="">
+               </div>
+               <div class="titleContent">
+                 <h5 class="articleTitle">你想要的未来是什么样?</h5>
+                 <p class="time">2020-03-25 12；08：12</p>
+                 <p class="articleContent">面对压力的时候，焦燥，无非是因为现在的自己，跟想象中的自己很有距离。打败焦虑的最好方法，就是去做那些让你焦虑的事情。
+                   不要问，不要等，不要犹豫，不要回头，既然你认准了这条路，就不要去打听要走多久。没有踏不平的路，只有不努力的人。态度决定一切，努力才有回报。你必须十分努力，才能看起来毫不费力。
+                 </p>
+                 <div class="articleInfo">
+                   <img src="" alt="">
+                   <span class="category">追忆年华</span>
+                   <div  class="read">阅读全文</div>
+                 </div>
+               </div>
+            </div>
+             <div class="contentListBottom">
+               <div class="titleLogo">
+                 <img src="../assets/images/titleLogo.png" alt="">
+               </div>
+               <div class="titleContent">
+                 <h5 class="articleTitle">你想要的未来是什么样?</h5>
+                 <p class="time">2020-03-25 12；08：12</p>
+                 <p class="articleContent">面对压力的时候，焦燥，无非是因为现在的自己，跟想象中的自己很有距离。打败焦虑的最好方法，就是去做那些让你焦虑的事情。
+                   不要问，不要等，不要犹豫，不要回头，既然你认准了这条路，就不要去打听要走多久。没有踏不平的路，只有不努力的人。态度决定一切，努力才有回报。你必须十分努力，才能看起来毫不费力。
+                 </p>
+                 <div class="articleInfo">
+                   <img src="" alt="">
+                   <span class="category">追忆年华</span>
+                   <div  class="read">阅读全文</div>
+                 </div>
+               </div>
+            </div>
+            <div class="contentListBottom">
+               <div class="titleLogo">
+                 <img src="../assets/images/titleLogo1.png" alt="">
+               </div>
+               <div class="titleContent">
+                 <h5 class="articleTitle">你想要的未来是什么样?</h5>
+                 <p class="time">2020-03-25 12；08：12</p>
+                 <p class="articleContent">面对压力的时候，焦燥，无非是因为现在的自己，跟想象中的自己很有距离。打败焦虑的最好方法，就是去做那些让你焦虑的事情。
+                   不要问，不要等，不要犹豫，不要回头，既然你认准了这条路，就不要去打听要走多久。没有踏不平的路，只有不努力的人。态度决定一切，努力才有回报。你必须十分努力，才能看起来毫不费力。
+                 </p>
+                 <div class="articleInfo">
+                   <img src="" alt="">
+                   <span class="category">追忆年华</span>
+                   <div  class="read">阅读全文</div>
+                 </div>
+               </div>
+            </div>
+            <div class="loadMore">
+              <el-button>加载更多</el-button>
+            </div>
+         </div>
+       </div>
+    </div>
+   
+ </div>
+</template>
+<script>
+import Header from '../components/header'
+export default {
+ name: '',
+ components: {
+   Header
+ },
+ props: {},
+ data () {
+   return {}
+ },
+ computed: {},
+ created () {},
+ mounted () {},
+ methods: {}
+}
+</script>
+<style lang="scss">
+  .blog_wrap{
+    .banner{
+      width: 100%;
+      display: flex;
+      .banner_left{
+        width: 60%;
+        background-color: #f7d2cc;
+        display: flex;
+        padding-top: 80px;
+        padding-left: 70px;
+        .logo{
+          width: 147px;
+          height: 147px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          background-color: #d28dbd;
+          img{
+            height: 137px;
+            vertical-align: middle;
+          }
+        }
+        .intro{
+          margin-left: 55px;
+          .title{
+              font-size: 48px;
+              line-height: 60px;
+              font-weight: bold;
+              color: #fefefe;
+          }
+          .details{
+              width: 422px;
+              font-size: 18px;
+              color: #fefefe;
+              font-weight: normal;
+          }
+          .btn{
+            width: 116px;
+            height: 40px;
+            border-radius: 20px;
+            border: solid 1px #fefefe;
+            font-size: 18px;
+            color: #fefefe;
+            background-color: #f7d2cc;
+          }
+        }
+        
+       
+      }
+      .banner_right{
+        width: 40%;
+        img{
+          height: 448px;
+        }
+      }
+   
+    }
+    .colorBg{
+       border-top-left-radius: 100px;
+      .content{
+        .contentList{
+           padding-left: 60px;
+          .contentListTop{
+            margin-top: 75px;
+            margin-bottom: 50px;
+            display: flex;
+            align-items: center;
+            img{
+              vertical-align: middle;
+            }
+            .tab{
+              font-size: 24px;
+              font-weight: bold;
+              color: #57686b;
+              margin-left: 20px;
+              line-height: 62px;
+              border-bottom: 4px solid #f3899d;
+            }
+
+          }
+          .contentListBottom{
+            display: flex;
+            margin-bottom: 35px;
+            .titleLogo{
+              margin-right: 30px;
+              img{
+                height: 207px;
+              }
+            }
+            .titleContent{
+              .articleTitle{
+                margin-top: 20px;
+                font-size: 20px;
+                font-weight: bold;
+                color: #333333;
+                line-height: 25px;
+              }
+              .time{
+                font-size: 12px;
+                color: #cbcbcb;
+                line-height: 20px;
+              }
+              .articleContent{
+                  width: 827px;
+                  font-size: 14px;
+                  font-family: SimSun;
+                  color: #999999;
+                  line-height: 23px;
+              }
+              .articleInfo{
+                display: flex;
+                .category{
+                  font-size: 16px;
+                  color: #777777;
+                }
+                .read{
+                  font-size: 14px;
+                  color: #d0667a;
+                  margin-left: 20px;
+                }
+              }
+            }
+          }
+          .loadMore{
+              margin: 80px auto;
+               display: flex;
+               justify-content: center;
+              .el-button{
+                width: 179px;
+                height: 52px;
+                font-size: 20px;
+                font-weight: bold;
+                color: #fefefe;
+                background: #dc7778;
+              }
+           
+          }
+          
+        }
+      }
+    }
+ 
+  }
+</style>

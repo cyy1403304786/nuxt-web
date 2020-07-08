@@ -6,7 +6,9 @@
               <img src="../assets/images/point.png" alt="">
             </blockquote>
             <div>首页</div>
-            <div>博客</div>
+            <div>
+              <nuxt-link to="/blog">博客</nuxt-link>
+            </div>
             <div>vlog</div>
             <div>项目</div>
             <div>关于我</div>
