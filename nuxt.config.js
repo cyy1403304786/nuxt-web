@@ -48,5 +48,9 @@ export default {
   */
   build: {
     transpile: [/^element-ui/],
+  },
+  env: {
+    BASE_URL: process.env.BASE_URL,
+    NODE_ENV: process.env.NODE_ENV
   }
 }

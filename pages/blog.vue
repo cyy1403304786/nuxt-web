@@ -2,6 +2,7 @@
  <div class="blog_wrap">
     <Header></Header>
     <div class="banner">
+     
       <div class="banner_left">
           <div class="logo">
             <img src="../assets/images/logo.png" alt="">
@@ -11,10 +12,13 @@
             <p class="details">Yingying is a beautiful and talented woman Yingying is a beautiful and talented woman</p>
             <el-button class="btn">了解更多</el-button>
           </div>
-      
+
+      </div>
+      <div class="squareBd">
+        <div class="box"></div>
       </div>
       <div class="banner_right">
-        <img src="../assets/images/banner.png" alt="">
+        <img src="../assets/images/blogComputer.png" alt="">
       </div>
     </div>
     <div class="colorBg">
@@ -98,11 +102,12 @@
          </div>
        </div>
     </div>
-   
+    <Footer></Footer>
  </div>
 </template>
 <script>
 import Header from '../components/header'
+import Footer from '../components/footer'
 export default {
  name: '',
  components: {
@@ -121,14 +126,15 @@ export default {
 <style lang="scss">
   .blog_wrap{
     .banner{
-      width: 100%;
+      // width: 100%;
       display: flex;
+      position: relative;
       .banner_left{
-        width: 60%;
+        width: 80%;
         background-color: #f7d2cc;
         display: flex;
         padding-top: 80px;
-        padding-left: 70px;
+        padding-left: 75px;
         .logo{
           width: 147px;
           height: 147px;
@@ -151,7 +157,7 @@ export default {
               color: #fefefe;
           }
           .details{
-              width: 422px;
+              width: 340px;
               font-size: 18px;
               color: #fefefe;
               font-weight: normal;
@@ -160,6 +166,7 @@ export default {
             width: 116px;
             height: 40px;
             border-radius: 20px;
+            margin-top: 10px;
             border: solid 1px #fefefe;
             font-size: 18px;
             color: #fefefe;
@@ -169,10 +176,33 @@ export default {
         
        
       }
+      .squareBd{
+        position: absolute;
+        bottom: -75px;
+        left: 0;
+        width: 148px;
+        height: 75px;
+        background-color:#f7d2cc;
+        .box{
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 148px;
+          height: 75px;
+          border-top-left-radius: 100px;
+          background-color: #f5f5f5;
+        }
+      }
       .banner_right{
-        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 559px;
+        height: 462px;
+        background-color: #efd290;
+        border-radius: 0px 0px 100px 0px;
         img{
-          height: 448px;
+          width: 80%;
         }
       }
    
@@ -191,6 +221,8 @@ export default {
               vertical-align: middle;
             }
             .tab{
+              z-index: 222;
+              position: relative;
               font-size: 24px;
               font-weight: bold;
               color: #57686b;
@@ -198,6 +230,17 @@ export default {
               line-height: 62px;
               border-bottom: 4px solid #f3899d;
             }
+            .tab:before {
+              content: "";
+              position: absolute;
+              z-index: -3;
+              left: -10px;
+              top: 8px;
+              width: 25px;
+              height: 25px;
+              border-radius: 50%;
+              border: solid 6px #f3899d;
+          }
 
           }
           .contentListBottom{
@@ -253,7 +296,8 @@ export default {
                 font-size: 20px;
                 font-weight: bold;
                 color: #fefefe;
-                background: #dc7778;
+                background-image: linear-gradient(90deg, #e18356 0%, #db767b 100%);
+                // background: #dc7778;
               }
            
           }

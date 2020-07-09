@@ -1,6 +1,8 @@
 <template>
   <div class="index_wrap">
-    <div class="searchBar">
+    
+    <Header></Header>
+    <!-- <div class="searchBar">
         <div class="topborList">
             <blockquote class="point">
               <img src="../assets/images/point.png" alt="">
@@ -20,7 +22,7 @@
             </div>
           </div>
         </div>
-    </div>
+    </div> -->
     <div class="contentBox">
         <div class="blogCenter">
             <div class="firstName">
@@ -54,7 +56,12 @@
 </template>
 
 <script>
-export default {}
+import Header from '../components/header'
+export default {
+   components: {
+   Header
+ },
+}
 </script>
 
 <style lang="scss">
