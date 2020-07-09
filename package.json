@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "cross-env BASE_URL=http://localhost:3000/ NODE_ENV=development nuxt",
-    "build": "cross-env BASE_URL=https://oss.wangcong.wang/ NODE_ENV=production nuxt build",
+    "build": "cross-env BASE_URL=https://oss.wangcong.wang/ NODE_ENV=production PORT=8899 nuxt build",
     "start": "cross-env BASE_URL=https://oss.wangcong.wang/ NODE_ENV=production PORT=8899 nuxt start",
     "export": "nuxt export",
     "serve": "nuxt serve"
