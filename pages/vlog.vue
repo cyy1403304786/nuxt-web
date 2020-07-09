@@ -2,7 +2,7 @@
   <div class="vlog_wrap">
     <Header></Header>
     <div class="bannerBlog">
-      <img src="../assets/images/bannerVlog.png" alt="">
+      <img :src="`${common.base_url}cyy/bannerVlog.png`" alt="">
       <div class="modal_box">
       </div>
     </div>
