@@ -1,7 +1,7 @@
 <template>
  <div class="blog_wrap">
     <Header></Header>
-    <div class="banner">
+    <div class="w banner">
      
       <div class="banner_left">
           <div class="logo">

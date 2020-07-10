@@ -2,27 +2,6 @@
   <div class="index_wrap">
     
     <Header></Header>
-    <!-- <div class="searchBar">
-        <div class="topborList">
-            <blockquote class="point">
-              <img src="../assets/images/point.png" alt="">
-            </blockquote>
-            <div>首页</div>
-            <div>
-              <nuxt-link to="/blog">博客</nuxt-link>
-            </div>
-            <div>vlog</div>
-            <div>项目</div>
-            <div>关于我</div>
-        </div>
-        <div class="rightBar">
-          <div class="searchBtn">
-            <div class="searchIcon">
-              <img src="../assets/images/search.png" alt="">
-            </div>
-          </div>
-        </div>
-    </div> -->
     <div class="contentBox">
         <div class="blogCenter">
             <div class="firstName">
@@ -44,14 +23,13 @@
           <img src="../assets/images/aside.png" alt="">
         </div>  -->
     </div>
-    <div class="footer">
-      <div class="bgImg">
-        <img src="../assets/images/shape.png" alt="">
-      </div>
-      <div class="footerIcon">
-        <img src="../assets/images/icon.png" alt="">
-      </div>
+    <div class="bgImg"></div>
+    <div class="line"></div>
+    <div class="footer_icon">
+      <img src="../assets/images/icon.png" alt="">
     </div>
+    <!-- <div class="footer">
+    </div> -->
   </div>
 </template>
 
@@ -102,14 +80,17 @@ export default {
     
     } 
     .contentBox{
+      position: relative;
       margin: 50px 0 0 345px;
       display: flex;
-   
       .blogCenter{
         z-index: 999;
         width: 890px;
         height: 520px;
         background-color: #fff;
+        box-shadow: 8px 9px 25px 13px 
+		rgba(227, 225, 225, 0.47);
+	      border-radius: 10px;
         .firstName{
           padding: 50px 0 0 50px;
           img{
@@ -164,22 +145,27 @@ export default {
     
       }
     }
-    .footer{
-      display: flex;
-      .bgImg{
-        position: absolute;
-        z-index: 100;
-        left: -30px;
-        bottom: 0;
-        img{
-          width: 100%;
-        }
-      }
-      .footerIcon{
-        img{
-          width: 237px;
-        }
-      }
+    .bgImg{
+      position: absolute;
+      top: 380px;
+        width: 555px;
+        height: 555px;
+        background-color: #b4d1d7;
+        border-radius: 0 523px 0 0;
     }
+    .line{
+      position: absolute;
+      width: 1100px;
+      height: 1px;
+      background-color: #000000;
+      opacity: 0.15;
+      // margin-bottom: 30px;
+    }
+    .footer_icon{
+      position: absolute;
+      margin-left: 800px;
+      margin-top: 30px;
+    }
+
   }
 </style>

@@ -4,6 +4,10 @@
     <div class="bannerBlog">
       <img :src="`${common.base_url}cyy/bannerVlog.png`" alt="">
       <div class="modal_box">
+          <div class="tip1">用胶片定格幸福时刻</div>
+          <h5 class="tip2">或许有一天，水电费混发送非黑即算单</h5>
+          <p class="tip3">Lorem Ipsum I sdnapd cndj love me  is shou dao de why need
+you need to fullted is scould can you</p>
       </div>
     </div>
     <div class="w">
@@ -94,8 +98,61 @@ export default {
 <style lang="scss">
 .vlog_wrap {
   .bannerBlog{
+    position: relative;
     img{
-      // height: 500px;
+     width: 100%;
+     height: 600px;
+    }
+    .modal_box{
+      position: absolute;
+      right: 168px;
+      top: 75px;
+      width: 492px;
+      height: 268px;
+      background-color: #ffffff;
+      opacity: 0.4;
+      .tip1{
+        margin-top: 105px;
+        color: #000000;
+        font-family: FZLTXHK;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 25px;
+        padding: 0 25px;
+      }
+      .tip2{
+        padding: 0 25px;
+        font-weight: bold;
+        font-size: 24px;
+        color: #000000;
+      }
+      .tip3{
+        padding: 0 25px;
+        font-family: MicrosoftYaHei;
+        line-height: 20px;
+      	font-size: 14px;
+        color: #b4b4b4;
+      }
+    }
+    .modal_box::before{
+      top: -30px;
+      right: -25px;
+      content: "";
+      position: absolute;
+      width: 76px;
+    	height: 68px;
+      border-top: 3px solid #ffffff;
+      border-right: 3px solid #ffffff;
+    }
+    .modal_box::after{
+      bottom: -30px;
+      left: -25px;
+      content: "";
+      position: absolute;
+      width: 76px;
+    	height: 68px;
+      border-bottom: 3px solid #ffffff;
+      border-left: 3px solid #ffffff;
     }
   }
   .w {
