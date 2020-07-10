@@ -26,11 +26,13 @@
         </div>
 
         <div class="rightBar">
+          <input type="text" placeholder="输入查询" class="imputBox">
           <div class="searchBtn">
             <div class="searchIcon">
               <img src="../assets/images/search.png" alt />
             </div>
           </div>
+        
         </div>
       </div>
     </div>
@@ -91,18 +93,44 @@ export default {
       }
     }
     .rightBar{
-      margin-right: 10px;
-        .searchBtn{
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 96px;
-          height: 86px;
-          background-color: #f3899d;
-          .searchIcon{
-            
+          position: relative;
+          margin-right: 10px;
+          .searchBtn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            width: 96px;
+            height: 86px;
+            background-color: #f3899d;
+            .searchIcon{
+              
+            }
           }
-        }
+          .imputBox{
+            position: absolute;
+            right: 22px;
+            top: 10px;
+            width: 45px;
+            height: 66px;
+            outline: none;
+            border: none;
+            background-color: #f3899d;
+            color: #fff;
+            border-radius: 30px;
+            transition: all 1s;
+            opacity: 0;
+            z-index: 5;
+          }
+          .imputBox::placeholder{
+            color: #fff;
+          }
+          .imputBox:hover{
+             width: 300px;
+              padding: 0 80px 0 20px;
+              opacity: 1;
+              cursor: text;
+          }
       }
   }
 }
