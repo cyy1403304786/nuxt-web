@@ -17,7 +17,7 @@ export default {
   ** Global CSS
   */
   css: [
-    '~assets/scss/reset.scss',   //引入公共文件
+    '@/assets/scss/reset.scss',   //引入公共文件
     'element-ui/lib/theme-chalk/index.css'
   ],
   /*
