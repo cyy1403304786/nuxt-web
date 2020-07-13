@@ -21,7 +21,7 @@
             <nuxt-link to="/items">项目</nuxt-link>
           </div>
           <div>
-            <nuxt-link to="/aboutme">关于我</nuxt-link>
+            <nuxt-link to="/aboutme">关于你</nuxt-link>
           </div>
         </div>
 
