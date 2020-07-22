@@ -14,6 +14,29 @@ you need to fullted is scould can you</p>
       <div class="banner">
         <!-- <img :src="`${common.base_url}cyy/pictureBanner.png`" alt /> -->
       </div>
+      <div class="light-wrapper">
+        <el-carousel :interval="40000" type="card" height="400px" trigger="click"  @change="getVideo">
+          <el-carousel-item v-for="(item,index) in videoList"  :key="index">
+            <div class="video-cover">
+              <video class="video-player"
+              ref="videos"
+              x5-video-player-type="h5"
+              x-webkit-airplay="true"
+              webkit-playsinline="true"
+              muted="muted"
+              playsinline
+              :poster="item.poster"
+              preload="none"
+              :controls="false"
+              :autoplay="index == 0 ? true : false"
+              loop="loop">
+              <source :src="common.base_url + item.srcLink" type="video/mp4">
+              </video>
+            </div>
+          </el-carousel-item>
+        </el-carousel>
+      </div>
+
       <!-- 跟着镜头去旅行 -->
       <div class="part1">
         <div class="part1_left">
@@ -83,7 +106,14 @@ export default {
   },
   props: {},
   data() {
-    return {};
+    return {
+        videoList:[
+          {poster: '/cyy/bg1.jpg',srcLink: 'cyy/111.mp4'},
+          {poster: '/cyy/bg2.jpg',srcLink: 'cyy/222.mp4'},
+          {poster: '/cyy/bg3.jpg',srcLink: 'cyy/111.mp4'}
+
+          ]
+    };
   },
   computed: {
     ...mapState({
@@ -92,7 +122,16 @@ export default {
   },
   created() {},
   mounted() {},
-  methods: {}
+  methods: {
+    getVideo(idx){
+      // console.log(idx)
+      this.$refs.videos.forEach((ele) =>{
+        ele.pause()
+      })
+      this.$refs.videos[idx].play()
+      // console.log(this.$refs.videos[idx])
+    }
+  }
 };
 </script>
 <style lang="scss">
@@ -160,6 +199,29 @@ export default {
       img {
         height: 500px;
       }
+    }
+
+    // 轮播图
+    .light-wrapper{
+        height: auto;
+        // background-color: #fff;
+        margin: 100px 0 0 0;
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        min-height: 300px;
+        .video-cover{
+          video{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            border-radius: 5px;
+          }
+        }
     }
     .part1 {
       margin-top: 80px;

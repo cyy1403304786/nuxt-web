@@ -18,20 +18,21 @@ export default {
   */
   css: [
     '@/assets/scss/reset.scss',   //引入公共文件
-    'element-ui/lib/theme-chalk/index.css'
+    'element-ui/lib/theme-chalk/index.css',
+    // "swiper/css/swiper.css",  //swiper 样式
+    'swiper/swiper-bundle.css'
   ],
-  /*
-  ** Plugins to load before mounting the App
-  ** https://nuxtjs.org/guide/plugins
-  */
   plugins: [
-    '@/plugins/element-ui'
+    '@/plugins/element-ui',
+    "@/plugins/vue-swiper.js"  //轮播图引入
+
   ],
-  /*
-  ** Auto import components
-  ** See https://nuxtjs.org/api/configuration-components
-  */
   components: true,
+  loading: {
+    color: 'blue',
+    height: '5px'
+  },
+
   /*
   ** Nuxt.js dev-modules
   */
@@ -41,7 +42,15 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/proxy'
   ],
+  proxy: [
+    ['/public', { target: 'http://localhost:8088/' }]
+  ],
+  axios: {
+    // proxyHeaders: false
+  },
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
