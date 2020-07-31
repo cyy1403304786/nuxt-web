@@ -10,7 +10,9 @@
     "serve": "nuxt serve"
   },
   "dependencies": {
+    "animate.css": "^4.1.0",
     "element-ui": "^2.13.2",
+    "hover.css": "^2.3.2",
     "nuxt": "^2.13.0",
     "swiper": "^6.0.2",
     "vue-awesome-swiper": "^4.1.1"

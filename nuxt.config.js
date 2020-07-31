@@ -10,7 +10,8 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet',  href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css' }
     ]
   },
   /*
@@ -19,8 +20,7 @@ export default {
   css: [
     '@/assets/scss/reset.scss',   //引入公共文件
     'element-ui/lib/theme-chalk/index.css',
-    // "swiper/css/swiper.css",  //swiper 样式
-    'swiper/swiper-bundle.css'
+    'swiper/swiper-bundle.css',
   ],
   plugins: [
     '@/plugins/element-ui',
@@ -33,28 +33,19 @@ export default {
     height: '5px'
   },
 
-  /*
-  ** Nuxt.js dev-modules
-  */
   buildModules: [
   ],
-  /*
-  ** Nuxt.js modules
-  */
+
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/proxy'
   ],
   proxy: [
-    ['/public', { target: 'http://localhost:8088/' }]
+    ['/public', { target: 'http://yysmile.cn/' }]
   ],
   axios: {
     // proxyHeaders: false
   },
-  /*
-  ** Build configuration
-  ** See https://nuxtjs.org/api/configuration-build/
-  */
   build: {
     transpile: [/^element-ui/],
   },

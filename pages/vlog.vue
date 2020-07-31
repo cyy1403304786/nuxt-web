@@ -2,7 +2,7 @@
   <div class="vlog_wrap">
     <Header></Header>
     <div class="bannerBlog">
-      <img :src="`${common.base_url}cyy/bannerVlog.png`" alt="">
+      <img :src="`${common.BASE_URL}cyy/bannerVlog.png`" alt="">
       <div class="modal_box">
           <div class="tip1">用胶片定格幸福时刻</div>
           <h5 class="tip2">或许有一天，水电费混发送非黑即算单</h5>
@@ -30,7 +30,7 @@ you need to fullted is scould can you</p>
               :controls="false"
               :autoplay="index == 0 ? true : false"
               loop="loop">
-              <source :src="common.base_url + item.srcLink" type="video/mp4">
+              <source :src="common.BASE_URL + item.srcLink" type="video/mp4">
               </video>
             </div>
           </el-carousel-item>
@@ -54,10 +54,10 @@ you need to fullted is scould can you</p>
             </div>
             <div class="line"></div>
           </div>
-          <img :src="`${common.base_url}cyy/part2.png`" alt class="part2" />
+          <img :src="`${common.BASE_URL}cyy/part2.png`" alt class="part2" />
         </div>
         <div class="part1_right">
-          <img :src="`${common.base_url}cyy/part1.png`" alt />
+          <img :src="`${common.BASE_URL}cyy/part1.png`" alt />
         </div>
       </div>
       <!-- 美食不可辜负 -->
@@ -65,10 +65,10 @@ you need to fullted is scould can you</p>
       <div class="part2">
         <div class="modelBox"></div>
         <div class="colomn">
-          <img :src="`${common.base_url}cyy/colomn.png`" alt />
+          <img :src="`${common.BASE_URL}cyy/colomn.png`" alt />
         </div>
         <div class="part2_left">
-          <img :src="`${common.base_url}cyy/part2_1.png`" alt />
+          <img :src="`${common.BASE_URL}cyy/part2_1.png`" alt />
         </div>
         <div class="part2_right">
           <h5 class="part2_right_title">美食与爱不可辜负</h5>
@@ -81,12 +81,12 @@ you need to fullted is scould can you</p>
           </div>
         </div>
         <div class="food">
-          <img :src="`${common.base_url}cyy/part2_2.png`" alt />
+          <img :src="`${common.BASE_URL}cyy/part2_2.png`" alt />
         </div>
       </div>
       <!-- 合照集合 -->
       <div class="part3">
-        <img :src="`${common.base_url}cyy/part3.png`" alt />
+        <img :src="`${common.BASE_URL}cyy/part3.png`" alt />
         <p class="name">YINGYING</p>
         <p class="ending">Record the goodness of life</p>
       </div>

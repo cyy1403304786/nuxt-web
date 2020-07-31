@@ -1,5 +1,6 @@
 <template>
  <div class="aboutme_wrap">
+      <div class=""></div>
  </div>
 </template>
 <script>
@@ -18,6 +19,5 @@ export default {
 </script>
 <style lang="scss">
   .aboutme_wrap{
-    
   }
 </style>

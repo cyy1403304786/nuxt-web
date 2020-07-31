@@ -4,9 +4,9 @@
       <div class="headerBox">
         <div class="leftBar">
           <blockquote class="point">
-            <nuxt-link to="/">
+            <!-- <nuxt-link to="/"> -->
               <img src="../assets/images/font.png" alt />
-            </nuxt-link>
+            <!-- </nuxt-link> -->
           </blockquote>
           <div>
             <nuxt-link to="/">首页</nuxt-link>
@@ -62,10 +62,24 @@ export default {
       display: flex;
       padding: 20px 0 30px 60px;
       a {
+        position: relative;
         font-size: 18px;
         font-weight: bold;
         font-family: MicrosoftYaHei;
         color: #141415;
+      }
+      a:hover::before{
+        width: calc(100% - 0px);
+        bottom: -5px;
+        left: 0px;
+        content: "";
+        position: absolute;
+        height: 2px;
+        background: #ff2222;
+        // transform: scale3d(0, 2.5, 1);
+        transform-origin: 0% 50%;
+        transition: transform 0.3s;
+        transition-timing-function: cubic-bezier(1, 0.68, 0.16, 0.9);
       }
       .nuxt-link-exact-active {
         color: #4cd7a3;
