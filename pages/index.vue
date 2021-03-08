@@ -32,6 +32,15 @@
     </div> -->
   </div>
 </template>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?892676f9e817427d45fb8ce2bb869d24";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
 
 <script>
 import Header from '../components/header'
@@ -175,3 +184,4 @@ export default {
 
   }
 </style>
+
